@@ -1,0 +1,13 @@
+<div>
+  <input
+    type="text"
+    [(ngModel)]="numSiniestro"
+    [ngClass]="{ error: input_error }"
+    [imask]="mascara_nsinies"
+    [unmask]="true"
+    placeholder="{{ mascara_nsinies.mask }}"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+    [disabled]="disabled"
+  />
+</div>
